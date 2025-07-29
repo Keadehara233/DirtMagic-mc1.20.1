@@ -1,5 +1,7 @@
 package com.kea;
 
+import com.kea.item.ModItemGroups;
+import com.kea.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,6 +21,8 @@ public class DirtMagic implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerItems();
+		ModItemGroups.registerGroups();
+		LOGGER.info("DirtMagic Mod Has Successfully Loaded.");
 	}
 }
