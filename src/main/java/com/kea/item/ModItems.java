@@ -14,6 +14,8 @@ public class ModItems {
 
     public static final Item DIRT_INGOT = registerItems("dirt_ingot",new Item(new Item.Settings()));
 
+    public static final Item RAW_DIRT = registerItems("raw_dirt",new Item(new Item.Settings()));
+
     public static Item registerItems(String id,Item item) {
         return Registry.register(Registries.ITEM,RegistryKey.of(Registries.ITEM.getKey(),
                 new Identifier(DirtMagic.MOD_ID,id)),item);
@@ -36,7 +38,7 @@ public class ModItems {
     }
 
     private static void ItemGroup(FabricItemGroupEntries entries){
-        entries.add(DIRT_INGOT);
+        entries.add(DIRT_INGOT);entries.add(RAW_DIRT);
     }
 
     public static void registerItems(){

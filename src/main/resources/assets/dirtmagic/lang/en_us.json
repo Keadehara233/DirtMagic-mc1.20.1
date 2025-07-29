@@ -1,4 +1,9 @@
 {
   "item.dirtmagic.dirt_ingot": "Dirt Ingot",
-  "itemgroup.dirtmagic": "Dirt Magic"
+  "item.dirtmagic.raw_dirt": "Raw Dirt",
+
+  "itemgroup.dirtmagic": "Dirt Magic",
+
+  "block.dirtmagic.dirt_ore": "Dirt Ore",
+  "block.dirtmagic.deepslate_dirt_ore": "Deepslate Dirt Ore"
 }

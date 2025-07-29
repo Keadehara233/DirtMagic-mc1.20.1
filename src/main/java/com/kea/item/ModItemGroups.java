@@ -1,6 +1,7 @@
 package com.kea.item;
 
 import com.kea.DirtMagic;
+import com.kea.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -24,6 +25,9 @@ public class ModItemGroups {
                         .icon(() -> new ItemStack(ModItems.DIRT_INGOT))
                         .entries(((displayContext, entries) -> {
                             entries.add(ModItems.DIRT_INGOT);
+                            entries.add(ModBlocks.DIRT_ORE);
+                            entries.add(ModBlocks.DEEPSLATE_DIRT_ORE);
+                            entries.add(ModItems.RAW_DIRT);
                         })).build());
     }
 }
