@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "dirt_ingot",
+  "ingredient": {
+    "item": "dirtmagic:dirt_ore"
+  },
+  "result": "dirtmagic:dirt_ingot"
+}
