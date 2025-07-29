@@ -1,0 +1,11 @@
+{
+  "name":"泥土锭",
+  "icon":"dirtmagic:dirt_ingot",
+  "category":"dirtmagic:foundation",
+  "pages":[
+    {
+      "type":"text",
+      "text":"文本"
+    }
+  ]
+}
