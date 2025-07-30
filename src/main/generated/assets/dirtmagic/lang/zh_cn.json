@@ -1,7 +1,13 @@
 {
   "block.dirtmagic.deepslate_dirt_ore": "深层泥土矿石",
   "block.dirtmagic.dirt_ore": "泥土矿石",
+  "item.dirtmagic.dirt_axe": "泥土斧",
+  "item.dirtmagic.dirt_hoe": "泥土锄",
   "item.dirtmagic.dirt_ingot": "泥土锭",
+  "item.dirtmagic.dirt_pickaxe": "泥土镐",
+  "item.dirtmagic.dirt_shovel": "泥土铲",
+  "item.dirtmagic.dirt_stick": "泥土棍",
+  "item.dirtmagic.dirt_sword": "泥土剑",
   "item.dirtmagic.raw_dirt": "泥土矿",
   "itemgroup.dirtmagic": "泥土魔法"
 }

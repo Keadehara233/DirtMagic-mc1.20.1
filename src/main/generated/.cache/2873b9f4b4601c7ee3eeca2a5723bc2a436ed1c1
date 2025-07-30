@@ -1,9 +1,15 @@
-// 1.20.1	2025-07-30T13:45:14.4335115	DirtMagic/Model Definitions
-c22a75a09b9a9cac2dd3a1f40babdcbbda6b35e3 assets\dirtmagic\models\item\raw_dirt.json
+// 1.20.1	2025-07-30T15:14:13.1002869	DirtMagic/Model Definitions
 b630a9bce5a4ea08fa1e58c7129fb8bf04c0d65e assets\dirtmagic\models\block\dirt_ore.json
 8476a6f1caf09c0f7fe72a9e5fe7387dae663eaa assets\dirtmagic\models\item\dirt_ingot.json
+cc6d0c371ccfd27a12ec1a429fef02bf81dc7814 assets\dirtmagic\models\item\dirt_stick.json
 50c48ec8fd12fec8294f7ee5b65dc444f1fe3dd3 assets\dirtmagic\blockstates\deepslate_dirt_ore.json
+51b2c089626af2157a99a93a61909b61d55f732b assets\dirtmagic\models\item\dirt_hoe.json
+f43d21e4ef8f8c5ed3db7be0481eabb84115f668 assets\dirtmagic\models\item\dirt_axe.json
 7b743419ad0efca5e23bccfe56004bf978a710d3 assets\dirtmagic\models\item\deepslate_dirt_ore.json
+2f0c9229d1d9f76ea5df48a81a00c68aa5f8a466 assets\dirtmagic\models\item\dirt_sword.json
 d8cc822e12f724cacc134a4d62126e8eacd4cf3b assets\dirtmagic\models\block\deepslate_dirt_ore.json
 738cc477fe8e6245f8d48b869ab7d1918827b5fa assets\dirtmagic\blockstates\dirt_ore.json
+801be16ba32168293cf2eb2f7b4b8742b0281287 assets\dirtmagic\models\item\dirt_shovel.json
+c22a75a09b9a9cac2dd3a1f40babdcbbda6b35e3 assets\dirtmagic\models\item\raw_dirt.json
+58f15b98bffb588e96833659526051ecfe3806f1 assets\dirtmagic\models\item\dirt_pickaxe.json
 604e9102fe53f8980ca3fece4745514edfc91980 assets\dirtmagic\models\item\dirt_ore.json

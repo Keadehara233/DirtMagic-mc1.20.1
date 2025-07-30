@@ -23,5 +23,12 @@ public class ModModelsProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.DIRT_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_DIRT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.DIRT_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIRT_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIRT_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIRT_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIRT_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIRT_STICK, Models.HANDHELD);
     }
 }

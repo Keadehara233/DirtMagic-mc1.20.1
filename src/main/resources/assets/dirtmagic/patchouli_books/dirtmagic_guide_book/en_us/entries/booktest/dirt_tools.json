@@ -1,0 +1,22 @@
+{
+  "name":"泥土工具、盔甲",
+  "icon":"dirtmagic:dirt_pickaxe",
+  "category":"dirtmagic:foundation",
+  "pages":[
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dirtmagic:dirt_pickaxe"
+      },
+      "text": "文本",
+      "title": "泥土工具"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "dirtmagic:dirt_stick",
+      "recipe2": "dirtmagic:dirt_pickaxe",
+      "title": "合成配方",
+      "text": "文本"
+    }
+  ]
+}

@@ -13,7 +13,7 @@
     {
       "type": "patchouli:smelting",
       "recipe": "dirtmagic:dirt_ingot_from_smelting_raw_dirt",
-      "title": "配方",
+      "title": "熔炼配方",
       "text": "文本"
     }
   ]

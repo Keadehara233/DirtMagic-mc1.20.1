@@ -28,6 +28,12 @@ public class ModItemGroups {
                             entries.add(ModBlocks.DIRT_ORE);
                             entries.add(ModBlocks.DEEPSLATE_DIRT_ORE);
                             entries.add(ModItems.RAW_DIRT);
+                            entries.add(ModItems.DIRT_PICKAXE);
+                            entries.add(ModItems.DIRT_SWORD);
+                            entries.add(ModItems.DIRT_AXE);
+                            entries.add(ModItems.DIRT_SHOVEL);
+                            entries.add(ModItems.DIRT_HOE);
+                            entries.add(ModItems.DIRT_STICK);
                         })).build());
     }
 }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "dirtmagic:dirt_ingot"
+    }
+  },
+  "pattern": [
+    "W",
+    "W"
+  ],
+  "result": {
+    "count": 4,
+    "item": "dirtmagic:dirt_stick"
+  },
+  "show_notification": true
+}

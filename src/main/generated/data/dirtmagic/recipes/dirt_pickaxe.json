@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "dirtmagic:dirt_stick"
+    },
+    "W": {
+      "item": "dirtmagic:dirt_ingot"
+    }
+  },
+  "pattern": [
+    "WWW",
+    " R ",
+    " R "
+  ],
+  "result": {
+    "item": "dirtmagic:dirt_pickaxe"
+  },
+  "show_notification": true
+}
