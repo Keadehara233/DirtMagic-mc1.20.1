@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "dirtmagic:dirt_helmet",
+    "dirtmagic:dirt_chestplate",
+    "dirtmagic:dirt_leggings",
+    "dirtmagic:dirt_boots"
+  ]
+}

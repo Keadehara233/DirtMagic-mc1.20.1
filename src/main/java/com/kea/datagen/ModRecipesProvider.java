@@ -64,5 +64,29 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .input('W',ModItems.DIRT_INGOT).input('R',ModItems.DIRT_STICK)
                 .criterion(hasItem(ModItems.DIRT_INGOT),conditionsFromItem(ModItems.DIRT_INGOT))
                 .offerTo(consumer,new Identifier(DirtMagic.MOD_ID,"dirt_hoe"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.DIRT_HELMET,1)
+                .pattern("WWW").pattern("W W").pattern("   ")
+                .input('W',ModItems.DIRT_INGOT)
+                .criterion(hasItem(ModItems.DIRT_INGOT),conditionsFromItem(ModItems.DIRT_INGOT))
+                .offerTo(consumer,new Identifier("dirt_helmet"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.DIRT_CHESTPLATE,1)
+                .pattern("W W").pattern("WWW").pattern("WWW")
+                .input('W',ModItems.DIRT_INGOT)
+                .criterion(hasItem(ModItems.DIRT_INGOT),conditionsFromItem(ModItems.DIRT_INGOT))
+                .offerTo(consumer,new Identifier("dirt_chestplate"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.DIRT_LEGGINGS,1)
+                .pattern("WWW").pattern("W W").pattern("W W")
+                .input('W',ModItems.DIRT_INGOT)
+                .criterion(hasItem(ModItems.DIRT_INGOT),conditionsFromItem(ModItems.DIRT_INGOT))
+                .offerTo(consumer,new Identifier("dirt_leggings"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.DIRT_BOOTS,1)
+                .pattern("   ").pattern("W W").pattern("W W")
+                .input('W',ModItems.DIRT_INGOT)
+                .criterion(hasItem(ModItems.DIRT_INGOT),conditionsFromItem(ModItems.DIRT_INGOT))
+                .offerTo(consumer,new Identifier("dirt_boots"));
     }
 }

@@ -17,6 +17,14 @@
       "recipe2": "dirtmagic:dirt_pickaxe",
       "title": "合成配方",
       "text": "文本"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dirtmagic:dirt_chestplate"
+      },
+      "text": "文本",
+      "title": "泥土盔甲"
     }
   ]
 }

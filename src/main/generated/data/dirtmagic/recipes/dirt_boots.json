@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "dirtmagic:dirt_ingot"
+    }
+  },
+  "pattern": [
+    "   ",
+    "W W",
+    "W W"
+  ],
+  "result": {
+    "item": "dirtmagic:dirt_boots"
+  },
+  "show_notification": true
+}

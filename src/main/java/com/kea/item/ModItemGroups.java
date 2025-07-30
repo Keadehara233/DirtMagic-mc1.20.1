@@ -34,6 +34,10 @@ public class ModItemGroups {
                             entries.add(ModItems.DIRT_SHOVEL);
                             entries.add(ModItems.DIRT_HOE);
                             entries.add(ModItems.DIRT_STICK);
+                            entries.add(ModItems.DIRT_HELMET);
+                            entries.add(ModItems.DIRT_CHESTPLATE);
+                            entries.add(ModItems.DIRT_LEGGINGS);
+                            entries.add(ModItems.DIRT_BOOTS);
                         })).build());
     }
 }

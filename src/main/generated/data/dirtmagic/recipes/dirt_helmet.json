@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "dirtmagic:dirt_ingot"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "W W",
+    "   "
+  ],
+  "result": {
+    "item": "dirtmagic:dirt_helmet"
+  },
+  "show_notification": true
+}

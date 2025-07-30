@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 
 public class ModModelsProvider extends FabricModelProvider {
     public ModModelsProvider(FabricDataOutput output) {
@@ -30,5 +31,10 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DIRT_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DIRT_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DIRT_STICK, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.DIRT_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.DIRT_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.DIRT_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.DIRT_BOOTS);
     }
 }
