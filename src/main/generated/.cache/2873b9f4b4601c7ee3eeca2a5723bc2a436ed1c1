@@ -1,0 +1,9 @@
+// 1.20.1	2025-07-30T13:45:14.4335115	DirtMagic/Model Definitions
+c22a75a09b9a9cac2dd3a1f40babdcbbda6b35e3 assets\dirtmagic\models\item\raw_dirt.json
+b630a9bce5a4ea08fa1e58c7129fb8bf04c0d65e assets\dirtmagic\models\block\dirt_ore.json
+8476a6f1caf09c0f7fe72a9e5fe7387dae663eaa assets\dirtmagic\models\item\dirt_ingot.json
+50c48ec8fd12fec8294f7ee5b65dc444f1fe3dd3 assets\dirtmagic\blockstates\deepslate_dirt_ore.json
+7b743419ad0efca5e23bccfe56004bf978a710d3 assets\dirtmagic\models\item\deepslate_dirt_ore.json
+d8cc822e12f724cacc134a4d62126e8eacd4cf3b assets\dirtmagic\models\block\deepslate_dirt_ore.json
+738cc477fe8e6245f8d48b869ab7d1918827b5fa assets\dirtmagic\blockstates\dirt_ore.json
+604e9102fe53f8980ca3fece4745514edfc91980 assets\dirtmagic\models\item\dirt_ore.json
