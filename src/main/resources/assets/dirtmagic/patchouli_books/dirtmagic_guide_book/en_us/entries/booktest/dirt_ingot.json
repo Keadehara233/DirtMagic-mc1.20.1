@@ -8,13 +8,27 @@
       "item": {
         "item": "dirtmagic:dirt_ingot"
       },
-      "text": "文本"
+      "text": "泥土锭是一种十分常见但又重要的材料，可以用来制作$(l:dirtmagic:booktest/dirt_tools)泥土工具、盔甲$()等"
     },
     {
       "type": "patchouli:smelting",
       "recipe": "dirtmagic:dirt_ingot_from_smelting_raw_dirt",
       "title": "熔炼配方",
-      "text": "文本"
+      "text": "泥土锭可通过熔炼泥土矿及矿石获得，泥土矿石推荐在y=10以上挖掘，挖掘它们需要石质工具。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dirtmagic:dirt_ore"
+      },
+      "text": "泥土矿石自然生成在y=10到80之间，每区块包含0-8处矿脉，每处矿脉包含0-8块矿石。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dirtmagic:deepslate_dirt_ore"
+      },
+      "text": "深层泥土矿石自然生成在y=-30到0之间，每区块包含0-4处矿脉，每处矿脉包含0-6块矿石。"
     }
   ]
 }

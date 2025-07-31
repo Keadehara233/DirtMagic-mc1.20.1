@@ -8,7 +8,7 @@
       "item": {
         "item": "dirtmagic:dirt_pickaxe"
       },
-      "text": "文本",
+      "text": "泥土工具由$(l:dirtmagic:booktest/dirt_ingot)泥土锭$()制成，它们的挖掘等级为石头，挖掘速度介于石头和铁之间，伤害与石头的相同，但耐久比铁质工具还高。",
       "title": "泥土工具"
     },
     {
@@ -16,14 +16,14 @@
       "recipe": "dirtmagic:dirt_stick",
       "recipe2": "dirtmagic:dirt_pickaxe",
       "title": "合成配方",
-      "text": "文本"
+      "text": "注意，泥土工具使用泥土棍合成而不是木棍。"
     },
     {
       "type": "patchouli:spotlight",
       "item": {
         "item": "dirtmagic:dirt_chestplate"
       },
-      "text": "文本",
+      "text": "与泥土工具类似，泥土盔甲也有着耐久高的特性，但它们防御力较低。",
       "title": "泥土盔甲"
     }
   ]

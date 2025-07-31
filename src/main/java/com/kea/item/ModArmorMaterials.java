@@ -13,12 +13,12 @@ import java.util.EnumMap;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements StringIdentifiable, ArmorMaterial {
-    DIRT("dirt", 15, Util.make(new EnumMap(ArmorItem.Type.class), map -> {
+    DIRT("dirt", 18, Util.make(new EnumMap(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 1);
-        map.put(ArmorItem.Type.LEGGINGS, 3);
-        map.put(ArmorItem.Type.CHESTPLATE, 4);
+        map.put(ArmorItem.Type.LEGGINGS, 4);
+        map.put(ArmorItem.Type.CHESTPLATE, 5);
         map.put(ArmorItem.Type.HELMET, 2);
-    }), 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+    }), 12, SoundEvents.ITEM_ARMOR_EQUIP_IRON,
             0.0F, 0.0F, () -> Ingredient.ofItems(ModItems.DIRT_INGOT));
     private static final EnumMap<ArmorItem.Type, Integer> BASE_DURABILITY = Util.make(new EnumMap(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 13);

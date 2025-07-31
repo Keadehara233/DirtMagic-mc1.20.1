@@ -3,6 +3,7 @@ package com.kea;
 import com.kea.block.ModBlocks;
 import com.kea.item.ModItemGroups;
 import com.kea.item.ModItems;
+import com.kea.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -25,6 +26,7 @@ public class DirtMagic implements ModInitializer {
 		ModItems.registerItems();
 		ModItemGroups.registerGroups();
 		ModBlocks.registerModBlocks();
+		ModWorldGeneration.generateModWorldGen();
 		LOGGER.info("DirtMagic Mod Has Successfully Loaded.");
 	}
 }

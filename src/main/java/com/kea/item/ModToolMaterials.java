@@ -6,7 +6,7 @@ import net.minecraft.recipe.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    DIRT(1,300,3.0f,1.0f,12,
+    DIRT(1,300,5.0f,1.0f,12,
             () -> Ingredient.ofItems(ModItems.DIRT_INGOT));
     private final int miningLevel;
     private final int itemDurability;
