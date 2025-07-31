@@ -18,6 +18,9 @@ public class ModBlocks {
     public static final Block DEEPSLATE_DIRT_ORE = register("deepslate_dirt_ore",
             new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_IRON_ORE)));
 
+    public static final Block DIRT_BLOCK = register("dirt_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
+
     public static Block register(String id, Block block) {
         registerBlockItems(id, block);
         return Registry.register(Registries.BLOCK,new Identifier(DirtMagic.MOD_ID,id), block);

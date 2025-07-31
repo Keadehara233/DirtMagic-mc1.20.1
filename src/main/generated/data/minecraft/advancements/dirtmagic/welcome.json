@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "welcome": {
+      "conditions": {},
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "dirtmagic:textures/gui/advancements/backgrounds/dirt_magic.png",
+    "description": {
+      "text": "探索这片大地的秘密吧！"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "dirtmagic:dirt_ingot"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "泥土魔法"
+    }
+  },
+  "requirements": [
+    [
+      "welcome"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "dirtmagic:new_book"
+    ]
+  },
+  "sends_telemetry_event": true
+}

@@ -25,6 +25,7 @@ public class ModItemGroups {
                         .icon(() -> new ItemStack(ModItems.DIRT_INGOT))
                         .entries(((displayContext, entries) -> {
                             entries.add(ModItems.DIRT_INGOT);
+                            entries.add(ModBlocks.DIRT_BLOCK);
                             entries.add(ModBlocks.DIRT_ORE);
                             entries.add(ModBlocks.DEEPSLATE_DIRT_ORE);
                             entries.add(ModItems.RAW_DIRT);

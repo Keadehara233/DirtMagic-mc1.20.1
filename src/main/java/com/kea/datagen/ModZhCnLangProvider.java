@@ -28,6 +28,7 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
 
         translationBuilder.add(ModBlocks.DIRT_ORE,"泥土矿石");
         translationBuilder.add(ModBlocks.DEEPSLATE_DIRT_ORE,"深层泥土矿石");
+        translationBuilder.add(ModBlocks.DIRT_BLOCK,"泥土块");
 
         translationBuilder.add(ModItemGroups.DIRTMAGIC,"泥土魔法");
     }

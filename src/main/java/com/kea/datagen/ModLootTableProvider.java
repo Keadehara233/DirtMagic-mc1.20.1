@@ -14,5 +14,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.DIRT_ORE,oreDrops(ModBlocks.DIRT_ORE,ModItems.RAW_DIRT));
         addDrop(ModBlocks.DEEPSLATE_DIRT_ORE,oreDrops(ModBlocks.DEEPSLATE_DIRT_ORE,ModItems.RAW_DIRT));
+        addDrop(ModBlocks.DIRT_BLOCK);
     }
 }

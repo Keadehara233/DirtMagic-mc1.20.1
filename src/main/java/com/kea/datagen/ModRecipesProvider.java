@@ -88,5 +88,8 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .input('W',ModItems.DIRT_INGOT)
                 .criterion(hasItem(ModItems.DIRT_INGOT),conditionsFromItem(ModItems.DIRT_INGOT))
                 .offerTo(consumer,new Identifier("dirt_boots"));
+
+        offerReversibleCompactingRecipes(consumer,RecipeCategory.MISC,ModItems.DIRT_INGOT,
+                RecipeCategory.BUILDING_BLOCKS,ModBlocks.DIRT_BLOCK);
     }
 }

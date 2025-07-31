@@ -21,6 +21,7 @@ public class DirtMagicDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModModelsProvider::new);
 		pack.addProvider(ModRecipesProvider::new);
 		pack.addProvider(ModWorldGenerator::new);
+		pack.addProvider(ModAdvancementsProvider::new);
 	}
 
 	@Override

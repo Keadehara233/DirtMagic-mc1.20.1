@@ -1,4 +1,4 @@
-// 1.20.1	2025-07-31T11:45:18.9940206	DirtMagic/Model Definitions
+// 1.20.1	2025-07-31T16:24:16.5680754	DirtMagic/Model Definitions
 170222e1fdb9de220b8adb5ba0b5f65af055f96c assets\dirtmagic\models\item\dirt_chestplate_redstone_trim.json
 ab57aa37872b81adfb333badd9efd374b2c2378f assets\dirtmagic\models\item\dirt_leggings.json
 b630a9bce5a4ea08fa1e58c7129fb8bf04c0d65e assets\dirtmagic\models\block\dirt_ore.json
@@ -29,8 +29,9 @@ e5d314e2299553fc13967e57bf5b3e17f4a9a847 assets\dirtmagic\models\item\dirt_chest
 bc492cfb23f5004404df32505c0d4fb28bef89a7 assets\dirtmagic\models\item\dirt_leggings_lapis_trim.json
 58f15b98bffb588e96833659526051ecfe3806f1 assets\dirtmagic\models\item\dirt_pickaxe.json
 13da15917c87521af2d4c6e24acc4d9576d06621 assets\dirtmagic\models\item\dirt_boots_gold_trim.json
-47390992314ef355e8bd086cea140d2f81f7289d assets\dirtmagic\models\item\dirt_boots_redstone_trim.json
 a2436612a1fd229950042457d44728f76e88821c assets\dirtmagic\models\item\dirt_helmet.json
+47390992314ef355e8bd086cea140d2f81f7289d assets\dirtmagic\models\item\dirt_boots_redstone_trim.json
+f8729d5729925955a8b883a544e1d860a2d8c51f assets\dirtmagic\models\block\dirt_block.json
 3a3f84b05f707cfff6e5b8540b7d82375f4ab28b assets\dirtmagic\models\item\dirt_boots_diamond_trim.json
 8476a6f1caf09c0f7fe72a9e5fe7387dae663eaa assets\dirtmagic\models\item\dirt_ingot.json
 f43d21e4ef8f8c5ed3db7be0481eabb84115f668 assets\dirtmagic\models\item\dirt_axe.json
@@ -43,6 +44,7 @@ b6f9caedb6b87e77992f26124cd76b16a5471059 assets\dirtmagic\models\item\dirt_chest
 738cc477fe8e6245f8d48b869ab7d1918827b5fa assets\dirtmagic\blockstates\dirt_ore.json
 f46a4d012e21c491a3b3138d57be419ebc8fa2d0 assets\dirtmagic\models\item\dirt_boots_netherite_trim.json
 f924959a6a0a7210f86feeab92ef46ab951a371a assets\dirtmagic\models\item\dirt_boots_quartz_trim.json
+240a010dfb8718b87faa3a1f3244ad129a1eaa22 assets\dirtmagic\blockstates\dirt_block.json
 b00488bdba7966b056368fde1d061b75be0a323f assets\dirtmagic\models\item\dirt_leggings_diamond_trim.json
 5242ce7608240720eb6782b00b114b01c44cfc0c assets\dirtmagic\models\item\dirt_helmet_quartz_trim.json
 2f0c9229d1d9f76ea5df48a81a00c68aa5f8a466 assets\dirtmagic\models\item\dirt_sword.json
@@ -55,5 +57,6 @@ c22a75a09b9a9cac2dd3a1f40babdcbbda6b35e3 assets\dirtmagic\models\item\raw_dirt.j
 d4ca6feafa7e00285e7bee62530b75de2117b757 assets\dirtmagic\models\item\dirt_leggings_gold_trim.json
 b9be8229b9d0d7cf16a9a728911eee38edb39bdd assets\dirtmagic\models\item\dirt_boots.json
 8e26daa661352c81bae96113a559dcc614b005cc assets\dirtmagic\models\item\dirt_boots_emerald_trim.json
+b2cec38accc3e53d55c0b2991744e12e7c742aaa assets\dirtmagic\models\item\dirt_block.json
 072e447c1575d7e48402bb04393b520bb669e8cf assets\dirtmagic\models\item\dirt_chestplate_quartz_trim.json
 604e9102fe53f8980ca3fece4745514edfc91980 assets\dirtmagic\models\item\dirt_ore.json
