@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
@@ -69,25 +70,31 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("WWW").pattern("W W").pattern("   ")
                 .input('W',ModItems.DIRT_INGOT)
                 .criterion(hasItem(ModItems.DIRT_INGOT),conditionsFromItem(ModItems.DIRT_INGOT))
-                .offerTo(consumer,new Identifier("dirt_helmet"));
+                .offerTo(consumer,new Identifier(DirtMagic.MOD_ID,"dirt_helmet"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.DIRT_CHESTPLATE,1)
                 .pattern("W W").pattern("WWW").pattern("WWW")
                 .input('W',ModItems.DIRT_INGOT)
                 .criterion(hasItem(ModItems.DIRT_INGOT),conditionsFromItem(ModItems.DIRT_INGOT))
-                .offerTo(consumer,new Identifier("dirt_chestplate"));
+                .offerTo(consumer,new Identifier(DirtMagic.MOD_ID,"dirt_chestplate"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.DIRT_LEGGINGS,1)
                 .pattern("WWW").pattern("W W").pattern("W W")
                 .input('W',ModItems.DIRT_INGOT)
                 .criterion(hasItem(ModItems.DIRT_INGOT),conditionsFromItem(ModItems.DIRT_INGOT))
-                .offerTo(consumer,new Identifier("dirt_leggings"));
+                .offerTo(consumer,new Identifier(DirtMagic.MOD_ID,"dirt_leggings"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.DIRT_BOOTS,1)
                 .pattern("   ").pattern("W W").pattern("W W")
                 .input('W',ModItems.DIRT_INGOT)
                 .criterion(hasItem(ModItems.DIRT_INGOT),conditionsFromItem(ModItems.DIRT_INGOT))
-                .offerTo(consumer,new Identifier("dirt_boots"));
+                .offerTo(consumer,new Identifier(DirtMagic.MOD_ID,"dirt_boots"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.WAND_OF_DIRT,1)
+                .pattern("  R").pattern(" W ").pattern("W  ")
+                .input('W',ModItems.DIRT_INGOT).input('R', Items.DIAMOND)
+                .criterion(hasItem(ModItems.DIRT_INGOT),conditionsFromItem(ModItems.DIRT_INGOT))
+                .offerTo(consumer,new Identifier(DirtMagic.MOD_ID,"wand_of_dirt"));
 
         offerReversibleCompactingRecipes(consumer,RecipeCategory.MISC,ModItems.DIRT_INGOT,
                 RecipeCategory.BUILDING_BLOCKS,ModBlocks.DIRT_BLOCK);

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:diamond"
+    },
+    "W": {
+      "item": "dirtmagic:dirt_ingot"
+    }
+  },
+  "pattern": [
+    "  R",
+    " W ",
+    "W  "
+  ],
+  "result": {
+    "item": "dirtmagic:wand_of_dirt"
+  },
+  "show_notification": true
+}

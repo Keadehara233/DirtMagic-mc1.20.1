@@ -32,6 +32,7 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DIRT_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DIRT_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DIRT_STICK, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.WAND_OF_DIRT, Models.HANDHELD);
 
         itemModelGenerator.registerArmor((ArmorItem) ModItems.DIRT_HELMET);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.DIRT_CHESTPLATE);

@@ -25,6 +25,7 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.DIRT_CHESTPLATE,"Dirt Chestplate");
         translationBuilder.add(ModItems.DIRT_LEGGINGS,"Dirt Leggings");
         translationBuilder.add(ModItems.DIRT_BOOTS,"Dirt Boots");
+        translationBuilder.add(ModItems.WAND_OF_DIRT,"Wand of Dirt");
 
         translationBuilder.add(ModBlocks.DIRT_ORE,"Dirt Ore");
         translationBuilder.add(ModBlocks.DEEPSLATE_DIRT_ORE,"Deepslate Dirt Ore");

@@ -1,6 +1,7 @@
 package com.kea.item;
 
 import com.kea.DirtMagic;
+import com.kea.item.wands.DirtWand;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -43,6 +44,9 @@ public class ModItems {
 
     public static final Item DIRT_BOOTS =registerItems("dirt_boots",
             new ArmorItem(ModArmorMaterials.DIRT,ArmorItem.Type.BOOTS,new Item.Settings()));
+
+    public static final Item WAND_OF_DIRT =registerItems("wand_of_dirt",
+            new DirtWand(new Item.Settings().maxCount(1)));
 
     public static Item registerItems(String id,Item item) {
         return Registry.register(Registries.ITEM,RegistryKey.of(Registries.ITEM.getKey(),
