@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_dirt_ingot": {
+    "has_magic_dust": {
       "conditions": {
         "items": [
           {
             "items": [
-              "dirtmagic:dirt_ingot"
+              "dirtmagic:magic_dust"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "dirtmagic:dirt_helmet"
+        "recipe": "dirtmagic:ender_magic_dust"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_dirt_ingot",
+      "has_magic_dust",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "dirtmagic:dirt_helmet"
+      "dirtmagic:ender_magic_dust"
     ]
   },
   "sends_telemetry_event": false

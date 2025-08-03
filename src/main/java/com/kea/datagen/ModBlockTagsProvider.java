@@ -16,7 +16,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.DIRT_ORE).add(ModBlocks.DEEPSLATE_DIRT_ORE).add(ModBlocks.DIRT_BLOCK);
+                .add(ModBlocks.DIRT_ORE).add(ModBlocks.DEEPSLATE_DIRT_ORE).add(ModBlocks.DIRT_BLOCK)
+                .add(ModBlocks.MAGIC_TRANSFORM_TABLE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.DIRT_ORE).add(ModBlocks.DEEPSLATE_DIRT_ORE).add(ModBlocks.DIRT_BLOCK);

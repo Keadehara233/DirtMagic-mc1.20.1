@@ -1,4 +1,4 @@
-package com.kea.entity;
+package com.kea.entity.dirtprojectile;
 
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRenderer;
@@ -6,8 +6,8 @@ import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
-public class ProjectileRenderer extends EntityRenderer<DirtProjectile> {
-    public ProjectileRenderer(EntityRendererFactory.Context ctx) {
+public class DirtProjectileRenderer extends EntityRenderer<DirtProjectile> {
+    public DirtProjectileRenderer(EntityRendererFactory.Context ctx) {
         super(ctx);
     }
 

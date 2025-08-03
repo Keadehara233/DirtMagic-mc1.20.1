@@ -25,11 +25,14 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.DIRT_CHESTPLATE,"泥土胸甲");
         translationBuilder.add(ModItems.DIRT_LEGGINGS,"泥土护腿");
         translationBuilder.add(ModItems.DIRT_BOOTS,"泥土靴子");
+        translationBuilder.add(ModItems.MAGIC_DUST,"魔法粉尘");
+        translationBuilder.add(ModItems.ENDER_MAGIC_DUST,"末影魔法粉尘");
         translationBuilder.add(ModItems.WAND_OF_DIRT,"泥土法杖");
 
         translationBuilder.add(ModBlocks.DIRT_ORE,"泥土矿石");
         translationBuilder.add(ModBlocks.DEEPSLATE_DIRT_ORE,"深层泥土矿石");
         translationBuilder.add(ModBlocks.DIRT_BLOCK,"泥土块");
+        translationBuilder.add(ModBlocks.MAGIC_TRANSFORM_TABLE,"魔力转化台");
 
         translationBuilder.add(ModItemGroups.DIRTMAGIC,"泥土魔法");
     }

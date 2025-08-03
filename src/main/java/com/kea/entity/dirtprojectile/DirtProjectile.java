@@ -1,4 +1,4 @@
-package com.kea.entity;
+package com.kea.entity.dirtprojectile;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;

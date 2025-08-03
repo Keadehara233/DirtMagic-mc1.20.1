@@ -1,6 +1,7 @@
 package com.kea.entity;
 
 import com.kea.DirtMagic;
+import com.kea.entity.dirtprojectile.DirtProjectile;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;

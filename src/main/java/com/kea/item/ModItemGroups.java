@@ -39,6 +39,9 @@ public class ModItemGroups {
                             entries.add(ModItems.DIRT_CHESTPLATE);
                             entries.add(ModItems.DIRT_LEGGINGS);
                             entries.add(ModItems.DIRT_BOOTS);
+                            entries.add(ModItems.MAGIC_DUST);
+                            entries.add(ModItems.ENDER_MAGIC_DUST);
+                            entries.add(ModBlocks.MAGIC_TRANSFORM_TABLE);
                             entries.add(ModItems.WAND_OF_DIRT);
                         })).build());
     }

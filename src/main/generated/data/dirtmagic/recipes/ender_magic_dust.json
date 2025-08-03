@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:dragon_breath"
+    },
+    "W": {
+      "item": "dirtmagic:magic_dust"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WRW",
+    "WWW"
+  ],
+  "result": {
+    "count": 8,
+    "item": "dirtmagic:ender_magic_dust"
+  },
+  "show_notification": true
+}

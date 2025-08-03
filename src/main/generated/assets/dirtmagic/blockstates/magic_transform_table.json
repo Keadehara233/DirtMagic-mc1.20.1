@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "dirtmagic:block/magic_transform_table"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 package com.kea.item.wands;
 
-import com.kea.entity.DirtProjectile;
+import com.kea.entity.dirtprojectile.DirtProjectile;
 import com.kea.entity.ModEntities;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;

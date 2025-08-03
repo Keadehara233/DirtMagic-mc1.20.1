@@ -2,6 +2,7 @@
   "block.dirtmagic.deepslate_dirt_ore": "Deepslate Dirt Ore",
   "block.dirtmagic.dirt_block": "Dirt Block",
   "block.dirtmagic.dirt_ore": "Dirt Ore",
+  "block.dirtmagic.magic_transform_table": "Magic Transform Table",
   "item.dirtmagic.dirt_axe": "Dirt Axe",
   "item.dirtmagic.dirt_boots": "Dirt Boots",
   "item.dirtmagic.dirt_chestplate": "Dirt Chestplate",
@@ -13,6 +14,8 @@
   "item.dirtmagic.dirt_shovel": "Dirt Shovel",
   "item.dirtmagic.dirt_stick": "Dirt Stick",
   "item.dirtmagic.dirt_sword": "Dirt Sword",
+  "item.dirtmagic.ender_magic_dust": "Ender Magic Dust",
+  "item.dirtmagic.magic_dust": "Magic Dust",
   "item.dirtmagic.raw_dirt": "Raw Dirt",
   "item.dirtmagic.wand_of_dirt": "Wand of Dirt",
   "itemgroup.dirtmagic": "Dirt Magic"

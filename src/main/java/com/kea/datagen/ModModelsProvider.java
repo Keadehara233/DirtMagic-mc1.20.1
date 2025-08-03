@@ -19,12 +19,15 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DIRT_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_DIRT_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DIRT_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAGIC_TRANSFORM_TABLE);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.DIRT_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_DIRT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAGIC_DUST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENDER_MAGIC_DUST, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.DIRT_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DIRT_SWORD, Models.HANDHELD);

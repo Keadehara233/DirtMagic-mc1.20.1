@@ -45,6 +45,10 @@ public class ModItems {
     public static final Item DIRT_BOOTS =registerItems("dirt_boots",
             new ArmorItem(ModArmorMaterials.DIRT,ArmorItem.Type.BOOTS,new Item.Settings()));
 
+    public static final Item MAGIC_DUST = registerItems("magic_dust",new Item(new Item.Settings()));
+
+    public static final Item ENDER_MAGIC_DUST = registerItems("ender_magic_dust",new Item(new Item.Settings()));
+
     public static final Item WAND_OF_DIRT =registerItems("wand_of_dirt",
             new DirtWand(new Item.Settings().maxCount(1)));
 

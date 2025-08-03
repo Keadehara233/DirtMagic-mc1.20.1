@@ -96,6 +96,12 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.DIRT_INGOT),conditionsFromItem(ModItems.DIRT_INGOT))
                 .offerTo(consumer,new Identifier(DirtMagic.MOD_ID,"wand_of_dirt"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,ModItems.ENDER_MAGIC_DUST,8)
+                .pattern("WWW").pattern("WRW").pattern("WWW")
+                .input('W',ModItems.MAGIC_DUST).input('R', Items.DRAGON_BREATH)
+                .criterion(hasItem(ModItems.MAGIC_DUST),conditionsFromItem(ModItems.MAGIC_DUST))
+                .offerTo(consumer,new Identifier(DirtMagic.MOD_ID,"ender_magic_dust"));
+
         offerReversibleCompactingRecipes(consumer,RecipeCategory.MISC,ModItems.DIRT_INGOT,
                 RecipeCategory.BUILDING_BLOCKS,ModBlocks.DIRT_BLOCK);
     }

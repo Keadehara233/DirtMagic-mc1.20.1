@@ -2,6 +2,7 @@
   "block.dirtmagic.deepslate_dirt_ore": "深层泥土矿石",
   "block.dirtmagic.dirt_block": "泥土块",
   "block.dirtmagic.dirt_ore": "泥土矿石",
+  "block.dirtmagic.magic_transform_table": "魔力转化台",
   "item.dirtmagic.dirt_axe": "泥土斧",
   "item.dirtmagic.dirt_boots": "泥土靴子",
   "item.dirtmagic.dirt_chestplate": "泥土胸甲",
@@ -13,6 +14,8 @@
   "item.dirtmagic.dirt_shovel": "泥土铲",
   "item.dirtmagic.dirt_stick": "泥土棍",
   "item.dirtmagic.dirt_sword": "泥土剑",
+  "item.dirtmagic.ender_magic_dust": "末影魔法粉尘",
+  "item.dirtmagic.magic_dust": "魔法粉尘",
   "item.dirtmagic.raw_dirt": "泥土矿",
   "item.dirtmagic.wand_of_dirt": "泥土法杖",
   "itemgroup.dirtmagic": "泥土魔法"
