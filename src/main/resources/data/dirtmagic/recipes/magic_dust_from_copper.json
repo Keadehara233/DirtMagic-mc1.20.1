@@ -1,0 +1,12 @@
+{
+  "type": "dirtmagic:magic_transform_table",
+  "ingredients": [
+    {
+      "item": "minecraft:copper_ingot"
+    }
+  ],
+  "output": {
+    "item": "dirtmagic:magic_dust",
+    "count": 2
+  }
+}

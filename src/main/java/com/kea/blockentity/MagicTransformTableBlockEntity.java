@@ -1,6 +1,6 @@
 package com.kea.blockentity;
 
-import com.kea.item.ModItems;
+import com.kea.recipe.MagicTransformTableRecipe;
 import com.kea.screen.MagicTransformTableScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
@@ -8,9 +8,9 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
+import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.screen.PropertyDelegate;
@@ -22,6 +22,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Optional;
+
 public class MagicTransformTableBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory,ImplementedInventory{
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(2, ItemStack.EMPTY);
     private static final int INPUT_SLOT = 0;
@@ -30,7 +32,7 @@ public class MagicTransformTableBlockEntity extends BlockEntity implements Exten
     protected final PropertyDelegate propertyDelegate;
 
     private int progress = 0;
-    private int maxProgress = 36;
+    private int maxProgress = 40;
 
     public MagicTransformTableBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.MAGIC_TRANSFORM_TABLE_BLOCK_ENTITY,pos, state);
@@ -122,9 +124,11 @@ public class MagicTransformTableBlockEntity extends BlockEntity implements Exten
     }
 
     private void craftItem(){
+        Optional<MagicTransformTableRecipe> recipe = getCurrentRecipe();
+
+        this.setStack(OUTPUT_SLOT,new ItemStack(recipe.get().getOutput(null).getItem(),
+                getStack(OUTPUT_SLOT).getCount() + recipe.get().getOutput(null).getCount()));
         this.removeStack(INPUT_SLOT,1);
-        ItemStack result = new ItemStack(ModItems.MAGIC_DUST);
-        this.setStack(OUTPUT_SLOT,new ItemStack(result.getItem(),getStack(OUTPUT_SLOT).getCount() + result.getCount()));
     }
 
     private boolean hasCraftingFinished(){
@@ -136,10 +140,20 @@ public class MagicTransformTableBlockEntity extends BlockEntity implements Exten
     }
 
     private boolean hasRecipe(){
-        ItemStack result = new ItemStack(ModItems.MAGIC_DUST);
-        boolean hasInput = getStack(INPUT_SLOT).getItem() == Items.IRON_INGOT;
+        Optional<MagicTransformTableRecipe> recipe = getCurrentRecipe();
 
-        return hasInput && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
+        return recipe.isPresent() &&
+                canInsertAmountIntoOutputSlot(recipe.get().getOutput(null)) &&
+                canInsertItemIntoOutputSlot(recipe.get().getOutput(null).getItem());
+    }
+
+    private Optional<MagicTransformTableRecipe> getCurrentRecipe() {
+        SimpleInventory inv = new SimpleInventory(this.size());
+        for (int i = 0;i< this.size();i++){
+            inv.setStack(i,this.getStack(i));
+        }
+        return getWorld().getRecipeManager().getFirstMatch(MagicTransformTableRecipe.Type.INSTANCE,
+                inv,getWorld());
     }
 
     private boolean canInsertAmountIntoOutputSlot(ItemStack result){

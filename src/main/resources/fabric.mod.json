@@ -23,8 +23,12 @@
 		],
 		"client":[
 			"com.kea.DirtMagicModClient"
+		],
+		"jei_mod_plugin": [
+			"com.kea.jei.JEIDirtMagicPlugin"
 		]
 	},
+
 	"mixins": [
 		"dirtmagic.mixins.json"
 	],

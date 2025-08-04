@@ -1,0 +1,12 @@
+{
+  "type": "dirtmagic:magic_transform_table",
+  "ingredients": [
+    {
+      "item": "minecraft:emerald"
+    }
+  ],
+  "output": {
+    "item": "dirtmagic:magic_dust",
+    "count": 20
+  }
+}

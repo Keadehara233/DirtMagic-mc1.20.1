@@ -2,6 +2,7 @@ package com.kea.item.wands;
 
 import com.kea.entity.dirtprojectile.DirtProjectile;
 import com.kea.entity.ModEntities;
+import com.kea.item.ModItems;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.item.TooltipContext;
@@ -28,8 +29,12 @@ public class DirtWand extends Item {
         ItemStack itemStack = player.getStackInHand(hand);
 
         if (player.isSneaking()){
-            placeDirt(world,player);
-            player.getItemCooldownManager().set(this,10);
+            if (placeDirt(world,player)) {
+                player.getItemCooldownManager().set(this,10);
+                return TypedActionResult.success(itemStack);
+            } else {
+                return TypedActionResult.fail(itemStack);
+            }
         }
         else {
             if (!world.isClient) {
@@ -43,7 +48,14 @@ public class DirtWand extends Item {
         return TypedActionResult.success(itemStack);
     }
 
-    private void placeDirt(World world,PlayerEntity player){
+    private boolean placeDirt(World world,PlayerEntity player){
+        if (!hasMagicDust(player)) {
+            if (!world.isClient) {
+                player.sendMessage(Text.literal("§c魔力不足"), false);
+            }
+            return false;
+        }
+
         HitResult hitResult = player.raycast(5.0,0.0f,false);
 
         if (hitResult.getType() == HitResult.Type.BLOCK){
@@ -53,8 +65,31 @@ public class DirtWand extends Item {
             BlockState blockState = world.getBlockState(pos);
             if (blockState.isAir() || blockState.isReplaceable()){
                 if (!world.isClient){
+                    consumeMagicDust(player);
                     world.setBlockState(pos, Blocks.DIRT.getDefaultState());
                 }
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean hasMagicDust(PlayerEntity player) {
+        for (int i = 0; i < player.getInventory().size(); i++) {
+            ItemStack stack = player.getInventory().getStack(i);
+            if (stack.getItem() == ModItems.MAGIC_DUST) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private void consumeMagicDust(PlayerEntity player) {
+        for (int i = 0; i < player.getInventory().size(); i++) {
+            ItemStack stack = player.getInventory().getStack(i);
+            if (stack.getItem() == ModItems.MAGIC_DUST) {
+                stack.decrement(1);
+                break;
             }
         }
     }
@@ -65,6 +100,6 @@ public class DirtWand extends Item {
         tooltip.add(Text.literal("§2右键："));
         tooltip.add(Text.literal("§7发射泥土法球，造成5点魔法伤害（冷却时间1秒）"));
         tooltip.add(Text.literal("§2潜行时右键："));
-        tooltip.add(Text.literal("§7在准心位置放置泥土（冷却时间0.5秒）"));
+        tooltip.add(Text.literal("§5消耗1魔力，§7在准心位置放置泥土（冷却时间0.5秒）"));
     }
 }
