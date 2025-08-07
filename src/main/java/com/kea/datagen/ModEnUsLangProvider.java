@@ -1,6 +1,7 @@
 package com.kea.datagen;
 
 import com.kea.block.ModBlocks;
+import com.kea.enchantment.ModEnchantments;
 import com.kea.item.ModItemGroups;
 import com.kea.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -28,6 +29,7 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.MAGIC_DUST,"Magic Dust");
         translationBuilder.add(ModItems.ENDER_MAGIC_DUST,"Ender Magic Dust");
         translationBuilder.add(ModItems.WAND_OF_DIRT,"Wand of Dirt");
+        translationBuilder.add(ModItems.ANKLET_OF_WIND,"Anklet of Wind");
 
         translationBuilder.add(ModBlocks.DIRT_ORE,"Dirt Ore");
         translationBuilder.add(ModBlocks.DEEPSLATE_DIRT_ORE,"Deepslate Dirt Ore");
@@ -35,5 +37,7 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.MAGIC_TRANSFORM_TABLE,"Magic Transform Table");
 
         translationBuilder.add(ModItemGroups.DIRTMAGIC,"Dirt Magic");
+
+        translationBuilder.add(ModEnchantments.FROST,"Frost");
     }
 }

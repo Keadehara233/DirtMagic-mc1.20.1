@@ -2,11 +2,13 @@ package com.kea;
 
 import com.kea.block.ModBlocks;
 import com.kea.blockentity.ModBlockEntities;
+import com.kea.enchantment.ModEnchantments;
 import com.kea.entity.ModEntities;
 import com.kea.item.ModItemGroups;
 import com.kea.item.ModItems;
 import com.kea.recipe.ModRecipes;
 import com.kea.screen.ModScreenHandlers;
+import com.kea.util.ModLootTableModifiers;
 import com.kea.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -29,7 +31,9 @@ public class DirtMagic implements ModInitializer {
 
 		ModItems.registerItems();
 		ModItemGroups.registerGroups();
+
 		ModBlocks.registerModBlocks();
+
 		ModEntities.registerModEntities();
 
 		ModWorldGeneration.generateModWorldGen();
@@ -39,6 +43,9 @@ public class DirtMagic implements ModInitializer {
 
 		ModRecipes.registerRecipes();
 
+		ModEnchantments.registerModEnchantments();
+
+		ModLootTableModifiers.modifierLootTables();
 		LOGGER.info("DirtMagic Mod Has Successfully Loaded.");
 	}
 }

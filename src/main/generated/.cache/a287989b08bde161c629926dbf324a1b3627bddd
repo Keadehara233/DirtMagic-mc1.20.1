@@ -1,9 +1,9 @@
-// 1.20.1	2025-08-03T18:23:49.2331165	DirtMagic/Recipes
+// 1.20.1	2025-08-07T12:26:54.5974936	DirtMagic/Recipes
+ee9ccb69619e301ab6638339ece23556d3e5327e data\dirtmagic\recipes\dirt_hoe.json
+477552dfa11269c28d86cc99f245654cc401d836 data\dirtmagic\advancements\recipes\misc\dirt_sword.json
 b4aca08c2ff627017ff3f40c49fe03a2e859a0ae data\dirtmagic\recipes\dirt_sword.json
 85277b773050c073b7c7ddc05af02d399540ce6b data\dirtmagic\recipes\dirt_axe.json
 fe5838ec6ef438bb20ba1b59a7c50644c7a215cc data\dirtmagic\recipes\dirt_ingot_from_blasting_raw_dirt.json
-477552dfa11269c28d86cc99f245654cc401d836 data\dirtmagic\advancements\recipes\misc\dirt_sword.json
-ee9ccb69619e301ab6638339ece23556d3e5327e data\dirtmagic\recipes\dirt_hoe.json
 230765a9e5fa50c1d2720269eab1755fc9c4ed47 data\dirtmagic\recipes\dirt_ingot_from_smelting_deepslate_dirt_ore.json
 346d3218f83dab0ce7cd43f17be09e22cffceff1 data\dirtmagic\advancements\recipes\misc\dirt_leggings.json
 98b2a25539e427fa227d965b44aa50c628bd5a2c data\dirtmagic\advancements\recipes\misc\dirt_ingot_from_smelting_dirt_ore.json

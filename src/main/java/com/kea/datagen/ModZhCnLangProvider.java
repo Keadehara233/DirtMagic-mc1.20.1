@@ -1,6 +1,7 @@
 package com.kea.datagen;
 
 import com.kea.block.ModBlocks;
+import com.kea.enchantment.ModEnchantments;
 import com.kea.item.ModItemGroups;
 import com.kea.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -28,6 +29,7 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.MAGIC_DUST,"魔法粉尘");
         translationBuilder.add(ModItems.ENDER_MAGIC_DUST,"末影魔法粉尘");
         translationBuilder.add(ModItems.WAND_OF_DIRT,"泥土法杖");
+        translationBuilder.add(ModItems.ANKLET_OF_WIND,"疾风脚镯");
 
         translationBuilder.add(ModBlocks.DIRT_ORE,"泥土矿石");
         translationBuilder.add(ModBlocks.DEEPSLATE_DIRT_ORE,"深层泥土矿石");
@@ -35,5 +37,7 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.MAGIC_TRANSFORM_TABLE,"魔力转化台");
 
         translationBuilder.add(ModItemGroups.DIRTMAGIC,"泥土魔法");
+
+        translationBuilder.add(ModEnchantments.FROST,"霜冻");
     }
 }

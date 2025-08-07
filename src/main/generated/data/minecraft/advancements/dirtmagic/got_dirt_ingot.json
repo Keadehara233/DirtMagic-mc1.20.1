@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:dirtmagic/welcome",
+  "criteria": {
+    "got_dirt_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dirtmagic:dirt_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "获得泥土锭"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "dirtmagic:dirt_pickaxe",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "泥土时代"
+    }
+  },
+  "requirements": [
+    [
+      "got_dirt_ingot"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

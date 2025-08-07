@@ -28,6 +28,7 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_DIRT, Models.GENERATED);
         itemModelGenerator.register(ModItems.MAGIC_DUST, Models.GENERATED);
         itemModelGenerator.register(ModItems.ENDER_MAGIC_DUST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ANKLET_OF_WIND,Models.GENERATED);
 
         itemModelGenerator.register(ModItems.DIRT_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DIRT_SWORD, Models.HANDHELD);

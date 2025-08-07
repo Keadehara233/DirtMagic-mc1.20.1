@@ -9,6 +9,8 @@ import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -30,7 +32,9 @@ public class DirtWand extends Item {
 
         if (player.isSneaking()){
             if (placeDirt(world,player)) {
-                player.getItemCooldownManager().set(this,10);
+                player.getItemCooldownManager().set(this,6);
+                player.getWorld().playSound(null,player.getX(),player.getY(),player.getZ(),
+                        SoundEvents.BLOCK_GRAVEL_PLACE, SoundCategory.PLAYERS,1.0f,1.0f);
                 return TypedActionResult.success(itemStack);
             } else {
                 return TypedActionResult.fail(itemStack);
@@ -42,7 +46,9 @@ public class DirtWand extends Item {
                 projectile.setPosition(player.getX(), player.getEyeY(), player.getZ());
                 projectile.setVelocity(player, player.getPitch(), player.getYaw(), 0.0f, 1.5f, 1.0f);
                 world.spawnEntity(projectile);
-                player.getItemCooldownManager().set(this,20);
+                player.getWorld().playSound(null,player.getX(),player.getY(),player.getZ(),
+                        SoundEvents.ENTITY_BLAZE_SHOOT, SoundCategory.PLAYERS,1.0f,1.0f);
+                player.getItemCooldownManager().set(this,16);
             }
         }
         return TypedActionResult.success(itemStack);
@@ -98,8 +104,8 @@ public class DirtWand extends Item {
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
         tooltip.add(Text.literal("§2右键："));
-        tooltip.add(Text.literal("§7发射泥土法球，造成5点魔法伤害（冷却时间1秒）"));
+        tooltip.add(Text.literal("§7发射泥土法球，造成6点魔法伤害（冷却时间0.8秒）"));
         tooltip.add(Text.literal("§2潜行时右键："));
-        tooltip.add(Text.literal("§5消耗1魔力，§7在准心位置放置泥土（冷却时间0.5秒）"));
+        tooltip.add(Text.literal("§5消耗1魔力，§7在准心位置放置泥土（冷却时间0.3秒）"));
     }
 }

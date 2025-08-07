@@ -2,6 +2,7 @@ package com.kea.item;
 
 import com.kea.DirtMagic;
 import com.kea.item.wands.DirtWand;
+import com.kea.trinkets.AnkletOfWind;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -33,24 +34,27 @@ public class ModItems {
     public static final Item DIRT_HOE = registerItems("dirt_hoe",
             new HoeItem(ModToolMaterials.DIRT,-1,-2f,new Item.Settings()));
 
-    public static final Item DIRT_HELMET =registerItems("dirt_helmet",
+    public static final Item DIRT_HELMET = registerItems("dirt_helmet",
             new ArmorItem(ModArmorMaterials.DIRT,ArmorItem.Type.HELMET,new Item.Settings()));
 
-    public static final Item DIRT_CHESTPLATE =registerItems("dirt_chestplate",
+    public static final Item DIRT_CHESTPLATE = registerItems("dirt_chestplate",
             new ArmorItem(ModArmorMaterials.DIRT,ArmorItem.Type.CHESTPLATE,new Item.Settings()));
 
-    public static final Item DIRT_LEGGINGS =registerItems("dirt_leggings",
+    public static final Item DIRT_LEGGINGS = registerItems("dirt_leggings",
             new ArmorItem(ModArmorMaterials.DIRT,ArmorItem.Type.LEGGINGS,new Item.Settings()));
 
-    public static final Item DIRT_BOOTS =registerItems("dirt_boots",
+    public static final Item DIRT_BOOTS = registerItems("dirt_boots",
             new ArmorItem(ModArmorMaterials.DIRT,ArmorItem.Type.BOOTS,new Item.Settings()));
 
     public static final Item MAGIC_DUST = registerItems("magic_dust",new Item(new Item.Settings()));
 
     public static final Item ENDER_MAGIC_DUST = registerItems("ender_magic_dust",new Item(new Item.Settings()));
 
-    public static final Item WAND_OF_DIRT =registerItems("wand_of_dirt",
+    public static final Item WAND_OF_DIRT = registerItems("wand_of_dirt",
             new DirtWand(new Item.Settings().maxCount(1)));
+
+    public static final Item ANKLET_OF_WIND = registerItems("anklet_of_wind",
+            new AnkletOfWind(new Item.Settings().maxCount(1)));
 
     public static Item registerItems(String id,Item item) {
         return Registry.register(Registries.ITEM,RegistryKey.of(Registries.ITEM.getKey(),

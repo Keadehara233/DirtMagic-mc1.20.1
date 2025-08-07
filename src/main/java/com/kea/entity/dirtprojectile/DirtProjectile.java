@@ -5,6 +5,8 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.world.World;
@@ -12,6 +14,8 @@ import net.minecraft.world.World;
 public class DirtProjectile extends PersistentProjectileEntity {
     public DirtProjectile(EntityType<? extends PersistentProjectileEntity> entityType, World world) {
         super(entityType, world);
+        this.setNoGravity(true);
+        this.setSound(SoundEvents.ENTITY_EVOKER_CAST_SPELL);
     }
 
     @Override
@@ -23,10 +27,10 @@ public class DirtProjectile extends PersistentProjectileEntity {
     public void tick() {
         super.tick();
         if (this.getWorld().isClient){
-            this.getWorld().addParticle(ParticleTypes.FLAME,
+            this.getWorld().addParticle(ParticleTypes.END_ROD,
                     this.getX(),this.getY(),this.getZ(),0.0,0.0,0.0);
         }
-        if (this.age > 100){
+        if (this.age > 30){
             this.discard();
         }
     }
@@ -42,9 +46,14 @@ public class DirtProjectile extends PersistentProjectileEntity {
         super.onEntityHit(entityHitResult);
         if (!this.getWorld().isClient && entityHitResult.getEntity() instanceof LivingEntity){
             LivingEntity target = (LivingEntity) entityHitResult.getEntity();
-            target.damage(this.getDamageSources().magic(),5.0f);
+            target.damage(this.getDamageSources().magic(),6.0f);
             this.discard();
         }
+    }
+
+    @Override
+    protected SoundEvent getHitSound() {
+        return super.getHitSound();
     }
 
     @Override

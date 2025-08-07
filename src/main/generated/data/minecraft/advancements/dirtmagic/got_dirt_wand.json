@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:dirtmagic/got_dirt_ingot",
+  "criteria": {
+    "got_dirt_wand": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dirtmagic:wand_of_dirt"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "获得泥土法杖"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "dirtmagic:wand_of_dirt"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "新手魔法师"
+    }
+  },
+  "requirements": [
+    [
+      "got_dirt_wand"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

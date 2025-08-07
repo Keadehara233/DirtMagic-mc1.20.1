@@ -43,6 +43,7 @@ public class ModItemGroups {
                             entries.add(ModItems.ENDER_MAGIC_DUST);
                             entries.add(ModBlocks.MAGIC_TRANSFORM_TABLE);
                             entries.add(ModItems.WAND_OF_DIRT);
+                            entries.add(ModItems.ANKLET_OF_WIND);
                         })).build());
     }
 }

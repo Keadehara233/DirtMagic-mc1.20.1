@@ -3,7 +3,7 @@
 	"package": "com.kea.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"DirtMagicMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
